@@ -1,0 +1,133 @@
+Prac 1 -- 
+
+Aim: 2D Linear Convolution, Circular Convolution between 2D matrices 
+
+2D Linear Convolution 
+
+Example 1: 
+Example 2 
+
+__________________________
+
+2D Circular Convolution 
+
+Example 1 
+Example 2  
+
+
+------------------------------
+
+Prac 2 -- 
+
+Aim: Circular Convolution expressed as Linear Convolution plus alias 
+
+
+
+------------------------------
+
+Prac 3 -- 
+
+Aim: Linear Cross Correlation of a 2D matrix, Circular Correlation between two signal and 
+Linear auto correlation of a 2D matrix 
+
+A) Linear Cross Correlation
+
+B) Circular Cross Correlation 	
+
+C) Linear Auto Correlation 
+
+D) Linear Cross Correlation
+
+------------------------------
+
+Prac 4 -- 
+
+ Aim: Perform DFT pf a 4x4 gray scale imag
+
+
+------------------------------
+
+Prac 5 -- 
+
+Aim: Compute discrete cosine transform. Program to perform KL transform for the given 2D
+ matrix.
+
+------------------------------
+
+Prac 6 -- 
+
+Aim: Brightness enhancement of an image, Contrast Manipulation, image negative. 
+
+Install Image Processing and Signal Processing packges and restart scilab. 
+
+Run this command on console: atomsRemove(‘scicv’) 
+
+Restart scilab 
+
+And run code 
+
+
+Q) Brightness Enhancement
+
+Q) Contrast Manipulation
+
+Q) Image Negative
+
+------------------------------
+
+Prac 7 -- 
+
+Aim: Threhsold Operation & Gray Level Slicing 
+
+Q) Threshold Operation 
+
+Q) Gray Level Slicing
+
+------------------------------
+
+Prac 8 -- 
+
+Aim: Image Segmentation 
+
+a.Differentiation of Gaussian Function
+
+b. Differentiation of Gaussian Filter Function
+
+c.  Edge detection using different edge detectors 
+
+------------------------------
+
+Prac 9 -- 
+
+Aim: Image Compression
+
+
+------------------------------
+
+Prac 10 -- 
+
+Aim: Binary Image Processing and Color Image Processing 
+
+Q) Dilatoin and erosion process
+
+Q) Opening and closing operatin on the image 
+
+Q) Read an RGB image and extract the three colour components red, green and blue 
+
+Q) Read a Color image and separate the color image into red green and blue planes 
+
+
+------------------------------
+
+Prac 11 --
+
+Aim: Image Arithmetic
+
+
+Q) Image Addition
+
+Q) Image Subtraction
+
+Q) Image multiplication
+
+Q) Image Division

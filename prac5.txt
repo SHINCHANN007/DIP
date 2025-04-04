@@ -1,0 +1,61 @@
+Compute discrete cosine transform. Program to perform KL transform for the given 2D matrix.
+
+
+MAAM code:
+
+clear;
+clc;
+X = [4,-2;-1,3];  
+[m,n] = size(X);
+A = 0;
+E = zeros(m,m);
+for i = 1:n
+    A = A + X(:,i);
+    E = E + X(:,i)*X(:,i)';
+end
+mx = A/n;
+E = E/n;
+C = E - mx*mx';
+[V,D] = spec(C);
+d = diag(D);
+[d, idx] = gsort(d);
+for j = 1:length(d)
+    T(:,j) = V(:,idx(j));
+end
+T = T';
+for i = 1:n
+    Y(:,i) = T*X(:,i);
+end
+for i = 1:n
+    x(:,i) = T' * Y(:,i);
+end
+disp('Eigen Values are U =',d);
+disp('The KL Transform Basis T =',T);
+disp('KL Transformation of the Input Matrix Y =', Y);
+disp('Reconstructed Matrix of the Original Samples X =',x);
+
+----------------------
+KOOKY STAN CODE:
+
+clear; clc;
+X = [4, -2; -1, 3];  // Input matrix (2x2)
+
+mx = mean(X, 2);                      // Mean vector (column-wise)
+E = (X * X') / size(X, 2);            // Expectation of outer products
+C = E - mx * mx';                     // Covariance matrix
+
+[V, D] = spec(C);                     // Eigen decomposition
+[d, idx] = gsort(diag(D));            // Sort eigenvalues descending
+T = V(:, idx)';                       // KL basis matrix
+
+Y = T * X;                            // KLT
+x = T' * Y;                           // Reconstructed data
+
+disp("Eigen Values U =", d);
+disp("KL Basis T =", T);
+disp("Transformed Y =", Y);
+disp("Reconstructed X =", x);
+
+
+
+

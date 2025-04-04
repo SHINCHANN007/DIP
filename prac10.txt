@@ -1,0 +1,108 @@
+Q) Dilatoin and erosion process
+
+close; 
+clear; 
+clc; 
+a=imread("C:\Users\ANURAG\Desktop\random\sir.jpg"); 
+b=imcreatese('rect',7,7); 
+a1=imdilate(a,b); 
+a2=imerode(a,b); 
+figure(1); 
+imshow(a); 
+title("Original Image"); 
+figure(2); 
+imshow(a1); 
+title("Dilated Image"); 
+figure(3); 
+imshow(a2); 
+title("Eroded Image"); 
+
+
+
+---------------
+
+
+Q) Opening and closing operatin on the image 
+
+
+close; 
+clear; 
+clc; 
+a=imread("C:\Users\ANURAG\Desktop\random\sir.jpg"); 
+b=imcreatese('rect',7,7); 
+a1=imopen(a,b); 
+a2=imclose(a,b); 
+figure(1); 
+imshow(a); 
+title("Original Image"); 
+figure(2); 
+imshow(a1); 
+title("Opened Image"); 
+figure(3); 
+imshow(a2); 
+title("Closed Image"); 
+
+
+
+---------------
+
+
+Q) Read an RGB image and extract the three colour components red, green and blue 
+
+close; 
+clear; 
+clc; 
+RGB=imread("C:\Users\ANURAG\Desktop\random\sir.jpg"); 
+R = RGB; 
+G = RGB; 
+B = RGB; 
+R(:,:,2) = 0; 
+R(:,:,3) = 0; 
+G(:,:,1) = 0; 
+G(:,:,3) = 0; 
+B(:,:,1) = 0; 
+B(:,:,2) = 0; 
+figure(1); 
+imshow(RGB); 
+title("Original Color Image"); 
+figure(2); 
+imshow(R); 
+title("Red Component"); 
+figure(3); 
+imshow(G); 
+title("Green Component"); 
+figure(4); 
+imshow(B); 
+title("Blue Component") 
+
+
+
+---------------
+
+
+Q) Read a Color image and separate the color image into red green and blue planes 
+
+
+close; 
+clear; 
+clc; 
+RGB=imread("C:\Users\ANURAG\Desktop\random\sir.jpg"); 
+R = RGB; 
+G = RGB; 
+B = RGB; 
+R(:,:,1) = 0; 
+G(:,:,2) = 0; 
+B(:,:,3) = 0; 
+figure(1); 
+imshow(RGB); 
+title("Original Color Image"); 
+figure(2); 
+imshow(R); 
+title("Red Component Missing"); 
+figure(3); 
+imshow(G); 
+title("Green Component Missing"); 
+figure(4); 
+imshow(B); 
+title("Blue Component Missing")
+

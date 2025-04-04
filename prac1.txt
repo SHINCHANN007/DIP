@@ -1,0 +1,65 @@
+2D Linear Convolution 
+
+Example 1: 
+
+clc;
+x = [4,5,6;7,8,9];
+h = [1;1;1];
+
+disp(x,"x : ");
+disp(h,"y : ");
+
+z = conv2(x,h);
+
+disp(z," 2d convolution ");
+
+-----
+
+Example 2 :
+
+clc;
+x=[1,2,3;4,5,6;7,8,9];
+h=[1,1;1,1;1,1];
+
+disp(x," x: ");
+disp(h," h: ");
+
+z = conv2(x,h);
+disp(z,"2d convoloution");
+
+
+__________________________
+
+2D Circular Convolution 
+
+Example 1 :
+
+clc;
+x =[1,2;3,4];
+h =[5,6;7,8];
+
+X=fft2(x);
+H=fft2(h);
+
+y =X.*H;
+ans = ifft(y);
+
+disp(ans,"2d cicular convolution");
+
+
+--------
+
+
+Example 2 :
+
+clc;
+x=[1,2,3;4,5,6;7,8,9];
+h=[1,1,1;1,1,1;1,1,1];
+
+X=fft2(x);
+H=fft2(h);
+
+y=X.*H;
+
+ans=ifft(y);
+disp(ans," 2d circular convolution");

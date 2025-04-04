@@ -1,0 +1,6 @@
+Perform DFT pf a 4x4 gray scale imag
+
+ clc;
+ x=[1,1,1,1;1,1,1,1;1,1,1,1;1,1,1,1]
+ X=fft(x,-1);
+ disp(X,"X[k]=")
